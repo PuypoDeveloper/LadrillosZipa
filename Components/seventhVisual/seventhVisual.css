@@ -1,0 +1,114 @@
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+body{ 
+    background-image: url("../../img/fondo.jpg"); ;
+}
+.seventhVisual { 
+    height: 50em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 7em;
+
+}
+.ctnTitleSeventhVisual { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ctnTitleSeventhVisual h3 { 
+    font-size: 35px;
+}
+.ctnTitleSeventhVisual h2 { 
+    font-family:LEMONMILK-Bold ;
+    font-size: 29px;
+}
+.ctnGallerySeventhVisual { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.ctnGallerySeventhVisual {
+    animation: aparecer 1s ease-in-out;
+  }
+.ctnGallerySeventhVisual2 { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.ctnGallerySeventhVisual2 {
+    animation: aparecer 1s ease-in-out;
+  }
+
+.ctnFirstImageGallerySeventhVisual { 
+    width: 20em;
+    height: 18em;
+}
+.ctnFirstImageGallerySeventhVisual img { 
+    width: 100%;
+    height: 100%;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.ctnFirstImageGallerySeventhVisual img:hover { 
+    scale: 0.95;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 1440px) { 
+    .ctnGallerySeventhVisual2 { 
+        grid-template-columns: repeat(2, 1fr);
+        width: 40em;
+        gap: 1em;
+    }
+    .seventhVisual { 
+        height: 70em;
+    }
+}
+@media(max-width: 970px) { 
+    .ctnGallerySeventhVisual { 
+        grid-template-columns: repeat(1, 1fr);
+        width: 20em;
+    }
+    .seventhVisual { 
+        height: 100em;
+    }
+}
+@media(max-width: 680px) { 
+    .ctnGallerySeventhVisual2 { 
+        grid-template-columns: repeat(1, 1fr);
+        width: 20em;
+        gap: 1em;
+    }
+    .seventhVisual { 
+        height: 140em;
+    }
+}
+@media(max-width: 340px) { 
+    .ctnFirstImageGallerySeventhVisual { 
+        width: 18em;
+        height: 16em;
+    }
+    .ctnGallerySeventhVisual2 { 
+        width: 10em;
+        gap: 1em;
+    }
+    .ctnGallerySeventhVisual { 
+        width: 4em;
+    }
+}

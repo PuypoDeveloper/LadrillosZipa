@@ -1,0 +1,207 @@
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+body{ 
+    background-image: url("../../img/fondo.jpg"); ;
+}
+.fourthVisual { 
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    gap: 3em;
+    margin-top: 5em;
+}
+.titleFourtVisual { 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.titleFourtVisual h3 { 
+    font-size: 40px;
+}
+.titleFourtVisual h2 { 
+    font-family:LEMONMILK-Bold ;
+    font-size: 29px;
+}
+
+.ctnProducts { 
+
+    width: 100%;
+    background-color: white;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctnProducts {
+    animation: aparecer 1s ease-in-out;
+  }
+
+.ctnImageFirstProduct { 
+    width: 13em;
+    height: 12em;
+    cursor: pointer;
+}
+.ctnImageFirstProduct img { 
+    width: 100%;
+    height: 100%;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.ctnImageFirstProduct img:hover { 
+    scale: 0.95;
+}
+
+
+.ctnTextFirstPro { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13em;
+    text-align: center;
+}
+.ctnTextFirstPro h4 { 
+    font-size: 15px;
+    font-family: Geometos;
+    color:rgb(235, 94, 1) ;
+}
+.ctnComponentsProducts { 
+    gap: 2em;
+}
+.ctnComponentsProducts { 
+
+    width: 96vw;
+    height: 60%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(6,1fr);
+}
+.firstProduct { 
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.ctnComponentsProducts li { 
+    list-style: none;
+}
+.ctnTextFirstPro h4, .ctnTextFirstPro p {
+    margin: 0;
+  }
+
+  /*MODAL*/
+
+  .ctnImageClick2 { 
+    background-color: #302c2d4d;
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .ctnImageClock22 { 
+    background-color: white;
+    border-radius: 5px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.ctnText { 
+    border: solid 2px rgba(0, 0, 0, 0.082);
+    background-color: rgba(0, 0, 0, 0.082);
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ctnText h4 { 
+    font-family: Geometos;
+    color:rgb(235, 94, 1) ;
+}
+
+  
+  @media (max-width: 1450px) { 
+    .ctnComponentsProducts { 
+        width: 50em;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .fourthVisual { 
+        height: 50em;
+    }
+    .ctnProducts { 
+        width: 100%;
+        height: 80%;
+    }
+   
+
+  }
+  @media(max-width: 840px) { 
+    .ctnComponentsProducts { 
+        grid-template-columns: repeat(2,1fr);
+        width: 30em;
+    }
+    .fourthVisual { 
+        margin-top: 2em;
+    
+    }
+    .fourthVisual { 
+        height: 80em;
+    
+    }
+  }
+
+@media(max-width: 500px) { 
+    .ctnComponentsProducts { 
+        grid-template-columns: repeat(1,1fr);
+        width: 15em;
+    }
+    .fourthVisual { 
+        height: 130em;
+        margin-top: 5em;
+    
+    }
+    .ctnProducts { 
+        height: 120em !important;
+    }
+    .ctnImageClock22 { 
+        width: 70%;
+    }
+}
+
+@media(max-width: 400px) { 
+    .ctnImageClock22 { 
+        width: 90%;
+    }
+}

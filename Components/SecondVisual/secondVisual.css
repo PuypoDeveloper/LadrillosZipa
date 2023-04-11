@@ -1,0 +1,252 @@
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+body{ 
+    background-image: url("../../img/fondo.jpg"); ;
+}
+.secondVisual { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 90vh;
+    margin-top: 5em;
+}
+.ctnTextSecondVisual {
+    animation: aparecer 1s ease-in-out;
+  }
+.ctnTextSecondVisual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 17px;
+    text-align: justify;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(2, 2, 2, 0.178);
+    padding: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.ctnTextSecondVisual p { 
+    color: white;
+}
+.ctnInfoRigthSecondVisual { 
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imageSecondVisual img { 
+    width: 100%;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.imageSecondVisual img:hover { 
+    scale: 0.95;
+}
+.ctnTextRightSecondVisual { 
+    background-color: rgb(235, 94, 1);
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    width: 10em;
+    font-family: Geometos;
+}
+.ctnTextRightSecondVisual {
+    animation: aparecer 1s ease-in-out;
+  }
+.ctnFistBoxSecondVisual { 
+    display: flex;
+    gap: 0.3em;
+    align-items:end
+}
+.yearsNumSecondVisual h2 { 
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Geometos;
+}
+.yearsTextSecondVisual h3 {
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: -1.7em;
+    font-family: Geometos;
+}
+.textColombiaSecondVisual h3 { 
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: Geometos;
+}
+.buildTextSecondVisual h4 { 
+    font-size: 30px;
+}
+
+@media (max-width: 1300px) { 
+    .secondVisual { 
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        height: 70em;
+        gap: 2em;
+    }
+    .ctnInfoRigthSecondVisual { 
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .imageSecondVisual img { 
+        width: 45em;
+    }
+    .ctnTextRightSecondVisual { 
+        font-size: 35px;
+        height: 60%;
+        width: 30%;
+    }
+    .ctnInfoRigthSecondVisual { 
+        width: 65em;
+    }
+    .ctnTextSecondVisual { 
+        width: 60em;
+    }
+}
+@media(max-width: 1035px) { 
+    .ctnTextSecondVisual { 
+        width: 80%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    .ctnInfoRigthSecondVisual { 
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .imageSecondVisual img { 
+        width: 100%;
+        height: 20em;
+    }
+    .secondCtnTextRigthScondVisual { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        margin: auto;
+    }
+    .ctnTextRightSecondVisual { 
+        width: 100%;
+        height: 3em;
+    }
+    .yearsNumSecondVisual h2 { 
+        font-size: clamp(50px, 5vw, 70px);
+    }
+    .yearsTextSecondVisual h3 {
+        font-size: clamp(10px, 5vw, 30px);
+        margin-bottom: 0.7em;
+    }
+    .textColombiaSecondVisual h3 { 
+        font-size: clamp(10px, 5vw, 30px);
+    }
+    .buildTextSecondVisual h4 { 
+        font-size: clamp(5px, 5vw, 20px);
+    }
+}
+@media(max-width: 840px) { 
+    .ctnTextSecondVisual { 
+        width: 90%;
+    }
+    .ctnTextSecondVisual p { 
+        font-size: clamp(5px, 5vw, 15px);
+    }
+
+}
+@media(max-width: 740px) { 
+    .ctnInfoRigthSecondVisual { 
+        width: 90%;
+    }
+    .ctnTextSecondVisual { 
+        max-height: 100% ;
+    }
+    .yearsNumSecondVisual h2 { 
+        font-size: clamp(10px, 5vw, 30px);
+    }
+    .yearsTextSecondVisual h3 {
+        font-size: clamp(5px, 5vw, 20px);
+        margin-bottom: 0.7em;
+    }
+    .textColombiaSecondVisual h3 { 
+        font-size: clamp(5px, 5vw, 20px);
+    }
+    .buildTextSecondVisual h4 { 
+        font-size: clamp(5px, 5vw, 15px);
+    }
+}
+@media(max-width: 650px) { 
+    .secondVisual { 
+        height: 70em;
+    }
+}
+@media(max-width: 600px) { 
+    .secondVisual { 
+        height: 80em;
+    }
+}
+@media(max-width: 480px) { 
+    .secondVisual { 
+        height: 80em;
+    }
+    .ctnInfoRigthSecondVisual { 
+      margin-top: -2em;
+    }
+}
+
+@media(max-width: 570px) { 
+    .yearsTextSecondVisual h3 {
+        margin-bottom: 0.2em;
+    }
+}
+@media(max-width: 460px) { 
+    .secondCtnTextRigthScondVisual { 
+        display: flex;
+        flex-direction: column;
+    }
+    .ctnTextRightSecondVisual { 
+        height: 4em;
+    }
+    .secondVisual { 
+        height: 90em;
+    }
+}
+@media(max-width: 410px) { 
+    .imageSecondVisual img { 
+        width: 100%;
+        height: 15em;
+    }
+    .ctnTextSecondVisual { 
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+}
+@media(max-width: 370px) { 
+    .secondVisual { 
+        height: 100em;
+    }
+
+}
+@media(max-width: 320px) { 
+    .secondVisual { 
+        height: 105em;
+    }
+
+}

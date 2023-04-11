@@ -1,0 +1,74 @@
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+body{ 
+    background-image: url("../../img/fondo.jpg"); ;
+}
+.sixthVisual { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40em;
+    width: 99vw;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+.sixthVisual h3 { 
+    font-family: Geometos;
+    color: white;
+}
+.ctnGallerySixthVisual { 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+
+}
+.ctnGallerySixthVisual {
+    animation: aparecer 1s ease-in-out;
+  }
+.ctnFirstImageGallerySixthVisual { 
+    width: 20em;
+    height: 16em;
+}
+.ctnFirstImageGallerySixthVisual img { 
+    width: 100%;
+    height: 100%;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.ctnFirstImageGallerySixthVisual img:hover { 
+    scale: 0.95;
+}
+
+@media (max-width: 1370px) { 
+    .ctnGallerySixthVisual { 
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sixthVisual { 
+        height: 60em;
+    }
+}
+@media (max-width: 1015px) { 
+    .ctnGallerySixthVisual { 
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sixthVisual { 
+        height: 74em;
+    }
+}
+@media (max-width: 700px) { 
+    .ctnGallerySixthVisual { 
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sixthVisual { 
+        height: 144em;
+    }
+}
+@media (max-width: 341px) { 
+    .ctnFirstImageGallerySixthVisual { 
+        width: 18em;
+        height: 16em;
+    }
+}

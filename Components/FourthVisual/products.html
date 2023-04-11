@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../FourthVisual/fourthVisual.css">
+    <link rel="stylesheet" href="../ThirdVisual/thirdVisual.css">
+    <link rel="stylesheet" href="../../Components/FirstVisual/firstVisual.css">
+    <link rel="stylesheet" href="../../fuentes.css">
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <link rel="stylesheet" href="../../Components/Contact/contact.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="icon" href="../../img/Logos/logoz.png">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" class="HeaderLogo">
+            <img loading="lazy" src="../../img/Logos/principalLogo.png" alt="">
+        </a>
+        <div class="HeaderMenu">
+            <ul>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href="../SecondVisual/we.html">NOSOTROS</a></li>
+                <li><a href="./products.html">PRODUCTOS</a></li>
+                <li><a href="../../Components/fifthVisual/gallery.html">GALERIA</a></li>
+                <li><a href="../../Components/sixthVisual/proyectos.html">PROYECTOS</a></li>
+                <li><a href="../seventhVisual/reconocimiento.html">RECONOCIMIENTO Y MEDIO AMBIENTE</a></li>
+                <li><a href="../Contact/contact.html">CONTACTENOS</a></li>
+            </ul>
+        </div>
+        <div class="HeaderSocial">
+            <div class="ctnIconsHeader">
+                <a href="https://web.facebook.com/profile.php?id=100090842487058" class="ctnIconFace">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a> 
+                <a href="https://www.instagram.com/ladrilloselzipapaipa/" class="ctnIconInsta">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>
+                ladrillos.elzipa
+            </p> 
+        </div>
+        <div class="ctnHamburguer" onclick="OpenHamburguer()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menuHamburguer" id="menuHamburguer">
+            <div class="ctnMenuHamburguer">
+                <div class="ctnMenuHamburguer2">
+                    <div class="ctnCloseMenuHamburguer" id="ctnCloseMenuHamburguer">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <a href="./index.html" class="HeaderLogo">
+                        <img src="../../img/Logos/principalLogo.png" alt="">
+                    </a>
+                        <ul>
+                        <li><a href="../../index.html">INICIO</a></li>
+                        <li><a href="./we.html">NOSOTROS</a></li>
+                        <li><a href="../FourthVisual/products.html">PRODUCTOS</a></li>
+                        <li><a href="../../Components/fifthVisual/gallery.html">GALERIA</a></li>
+                        <li><a href="../sixthVisual/proyectos.html">PROYECTOS</a></li>
+                        <li><a href="../seventhVisual/reconocimiento.html">RECONOCIMIENTO Y MEDIO AMBIENTE</a></li>
+                        <li><a href="../Contact/contact.html">CONTACTENOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="fourthVisual" id="productos">
+        <div class="titleFourtVisual">
+            <h3>NUESTROS</h3>
+            <h2>PRODUCTOS</h2>
+        </div>
+        <div class="ctnProducts">
+            <ul class="ctnComponentsProducts">
+                <li class="firstProduct">
+                    <div class="ctnImageFirstProduct" onclick="ChangeImageProduct('../../img/Imagenes/FourthVisual/FirstProduct.png','LADRILLO PORTANTE','Dimenciones 29 x 14 x 9','Peso 3.4 kg')">
+                        <img loading="lazy" src="../../img/Imagenes/FourthVisual/FirstProduct.png" alt="">
+                    </div>
+                    <div class="ctnTextFirstPro">
+                        <h4>LADRILLO PORTANTE</h4>
+                        <P>Dimenciones 29 x 14 x 9</P>
+                        <p>Peso 3.4 kg</p>
+                    </div>
+                </li>
+                <li class="secondProduct">
+                    <div class="ctnImageFirstProduct" onclick="ChangeImageProduct('../../img/Imagenes/FourthVisual/SecondProduct.png','LADRILLO PORTANTE','Dimenciones 29 x 12 x 9','Peso 3.0 kg')">
+                        <img loading="lazy" src="../../img/Imagenes/FourthVisual/SecondProduct.png" alt="">
+                    </div>
+                    <div class="ctnTextFirstPro">
+                        <h4>LADRILLO PORTANTE</h4>
+                        <P>Dimenciones 29 x 12 x 9</P>
+                        <p>Peso 3.0 kg</p>
+                    </div>
+                </li>
+                <li class="thirdProduct">
+                    <div class="ctnImageFirstProduct"  onclick="ChangeImageProduct('../../img/Imagenes/FourthVisual/ThirdProduct.png','LADRILLO ESTRUCTURAL','Dimenciones 29 x 12 x 6','Peso 2.0 kg')">
+                        <img loading="lazy" src="../../img/Imagenes/FourthVisual/ThirdProduct.png" alt="">
+                        
+                    </div>
+                    <div class="ctnTextFirstPro">
+                        <h4>LADRILLO ESTRUCTURAL</h4>
+                        <P>Dimenciones 29 x 12 x 6</P>
+                        <p>Peso 2.0 kg</p>
+                    </div>
+                </li>
+                <li class="fourthProduct"> 
+                    <div class="ctnImageFirstProduct" onclick="ChangeImageProduct('../../img/Imagenes/FourthVisual/FourthProduct.png','LADRILLO ESTRUCTURAL','Dimenciones 10 x 20 x 4','Peso 2.0 kg', 'Un/M2 50')">
+                        <img loading="lazy" src="../../img/Imagenes/FourthVisual/FourthProduct.png" alt="">
+                        
+                    </div>
+                    <div class="ctnTextFirstPro">
+                        <h4> ADOQUIN TIPO LIVIANO</h4>
+                        <P>Dimenciones 10 x 20 x 4</P>
+                        <p>Peso 2.2 kg</p>
+                        <P>Un/M2 50</P>
+                    </div>
+                </li>
+                <li class="fifthProduct">
+                    <div class="ctnImageFirstProduct" onclick="ChangeImageProduct('../../img/Imagenes/FourthVisual/fifth.png','ADOQUIN TIPO PESADOL','Dimenciones 10 x 20 x 6','Peso 2.5 kg', 'Un/M2 50')">
+                        <img loading="lazy" src="../../img/Imagenes/FourthVisual/fifth.png" alt="">  
+                    </div>
+                    <div class="ctnTextFirstPro">
+                        <h4> ADOQUIN TIPO PESADO</h4>
+                        <P>Dimenciones 10 x 20 x 6</P>
+                        <p>Peso 2.5 kg</p>
+                        <P>Un/M2 50</P>
+                    </div>
+                </li>
+                <li class="sixthProduct">
+                    <div class="ctnImageFirstProduct"onclick="ChangeImageProduct('../../img/Imagenes/FourthVisual/sixthProduct.png','BLOQUE NO. 4','Dimenciones 10 x 20 x 30','Peso 3.8 kg', 'Un/M2 15')">
+                        <img loading="lazy" src="../../img/Imagenes/FourthVisual/sixthProduct.png" alt="">
+                        
+                    </div>
+                    <div class="ctnTextFirstPro">
+                        <h4>BLOQUE NO. 4</h4>
+                        <P>Dimenciones 10 x 20 x 30</P>
+                        <p>Peso 3.8 kg</p>
+                        <P>Un/M2 15</P>
+                    </div>
+                </li>
+                <div class="ctnImageClick2" id="ctnImageClick2">
+                    <div class="iconClose" id="iconClose2">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="ctnImageClock22" id="ctnImageText2">
+                        <div class="ctnImageText">
+                            <img loading="lazy" src="../../img/Imagenes/FourthVisual/sixthProduct.png" width="300px" height="300px" id="changeImageTwo">
+                        </div>
+                        <div class="ctnText">
+                            <h4 class="titleImageModal" id="titleImageModal">BLOQUE NO. 4</h4>
+                            <P class="TextOneModal" id="TextOneModal">Dimenciones 10 x 20 x 30</P>
+                            <p class="TextTwoModal" id="TextTwoModal">Peso 3.8 kg</p>
+                            <P class="TextThreeModal" id="TextThreeModal">Un/M2 15</P>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <footer class="principalFooter">
+        <div class="ctnFooter">
+            <div class="ctnFooter1">
+                <div class="ctnFooter2">
+                    <div class="UBICACIÓN">
+                        <h5>UBICACIÓN</h5>
+                        <div class="ctnTextUbicacion">
+                            <p>Vereda de Sativa Km. 10</p>
+                            <p>Vía Paipa - Tunja</p>
+                            <p>Paipa - Boyacá</p>
+                            <p>Colombia</p>
+                        </div>
+                    </div>
+                    <div class="LLÁMENOS">
+                        <h5>LLÁMENOS</h5>
+                        <p>311 480 7252</p>
+                    </div>
+                    <div class="Email">
+                        <h5>ENVÍANOS UN CORREO ELECTRÓNICO</h5>
+                        <div class="ctnTextEmail">
+                            <p>gerencia@ladrilloselzipa.com </p>
+                            <p>ladrilloselzipa@yahoo.com.ar</p>
+                        </div>
+                    </div>
+                    <div class="Redes">
+                        <h5>ENCUENTRANOS</h5>
+                        <div class="ctnRedes">
+                            <a href="https://web.facebook.com/profile.php?id=100090842487058"><img loading="lazy" src="../../img/Logos/facebook.png" alt=""></a>
+                            <a href="https://www.instagram.com/ladrilloselzipapaipa/"><img loading="lazy" src="../../img/Logos/instagram.png" alt=""></a>
+                            <img loading="lazy" src="../../img/Logos/whatsapp.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="qr">
+                    <div class="codigoQr">
+                        <img loading="lazy" src="../../img/qr.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./fourthVisual.js"></script>
+</body>
+</html>

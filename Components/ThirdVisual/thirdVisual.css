@@ -1,0 +1,107 @@
+.thirdVisual { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 50em;
+    width: 99vw;
+}
+.ctnImgThirdVisual { 
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+.ctnImgThirdVisual img { 
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.ctnImgThirdVisual img:hover { 
+    scale: 0.95;
+}
+.ctnTextThirdVisual { 
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.mision h2,
+.vision h2 { 
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: LEMONMILK-Bold;
+    margin-bottom: 1em;
+}
+.mision p,
+.vision p { 
+    text-align: justify;
+    font-size: 17px;
+    padding: 1em;
+    background-color: rgba(2, 2, 2, 0.096);
+}
+
+/*RESPONSIVE*/
+@media(max-width:1250px) { 
+    .thirdVisual { 
+        height: 50em;
+    }
+}
+@media(max-width: 900px) { 
+    .thirdVisual { 
+        margin-top: 2em;
+    }
+
+}
+@media(max-width: 840px) { 
+    .thirdVisual { 
+        margin-top: 0em;
+    }
+    .mision p,
+    .vision p { 
+        font-size: clamp(5px, 5vw, 15px);
+    }
+
+}
+@media(max-width: 750px) { 
+    .thirdVisual { 
+        display: flex;
+        flex-direction: column;
+    }
+    .ctnImgThirdVisual { 
+        height: 20em;
+        margin-top: 2em;
+        width: 90%;
+    }
+    .ctnTextThirdVisual { 
+        margin-top: 3em;
+    }
+
+    .thirdVisual { 
+        height: 60em;
+    }
+}
+@media(max-width: 670px) { 
+    .thirdVisual { 
+        margin-top: 2em;
+    }
+}
+@media(max-width: 450px) { 
+    .thirdVisual { 
+        height: 65em;
+    }
+}
+@media(max-width: 410px) { 
+    .thirdVisual { 
+        height: 70em;
+    }
+}
+@media(max-width: 350px) { 
+    .thirdVisual { 
+        height: 75em;
+    }
+}
+

@@ -1,0 +1,271 @@
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+body{ 
+    background-image: url("../../img/fondo.jpg"); ;
+}
+.eightVisual { 
+    width: 99vw;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+
+}
+
+.formAndMap { 
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.formAndMap {
+    animation: aparecer 1s ease-in-out;
+  }
+.map { 
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.form { 
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.ctnInputForm,
+.correo,
+.ctnInputForm { 
+    width: 45em;
+}
+.ctnInputForm input,
+.correo input,
+.ctnInputForm textarea { 
+    width: 100%;
+    padding: 0.5em;
+    border: solid 2px white;
+    background-color: #eb5f0104;
+}
+.ctnInputForm input,
+.correo input { 
+    height: 2em;
+}
+.ctnInputForm textarea { 
+    height: 10em;
+}
+.ctnInputForm input::placeholder,
+.correo input::placeholder,
+.ctnInputForm textarea::placeholder { 
+    color: white;
+}
+.formData { 
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.ctnInputFormBtn input { 
+    width: 8em;
+    height: 2em;
+    background-color: rgba(0, 255, 255, 0);
+    border: solid 2px #d45907;
+    color: white;
+    transition: 0.25s;
+}
+.ctnInputFormBtn input:hover { 
+    background-color: #d45907;
+    color: black;
+    scale: 1.1;
+}
+.form h3 { 
+    font-family:Geometos;
+    color: white;
+}
+.ctnFooter1 { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ctnFooter2 { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.codigoQr img { 
+    width: 10em;
+    height: 10em;
+}
+
+.UBICACIÓN h5,
+.Email h5{ 
+    margin-bottom: 25px;
+    text-align: center;
+}
+.ctnTextUbicacion p { 
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    justify-content: center;
+    align-items: center;
+}
+.LLÁMENOS { 
+    text-align: center;
+}
+.ctnTextEmail p { 
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    justify-content: center;
+    align-items: center;
+}
+.principalFooter { 
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    height: 12em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+.ctnFooter { 
+    width: 95%;
+}
+.ctnRedes { 
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+.ctnRedes img { 
+    width: 2em;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.ctnRedes img:hover { 
+    transform: scale(0.9);
+    rotate: 5deg;
+}
+
+
+/*RESPONSIVE*/
+@media(max-width: 1450px) { 
+    .formAndMap { 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 2fr;
+        gap: 1em;
+    }
+    .form { 
+        order: 1;
+    }
+    .map { 
+        order: 2;
+    }
+    .eightVisual { 
+        height: 77em;
+    }
+}
+@media (max-width: 1100px) { 
+    .ctnFooter1 { 
+        display: flex;
+        flex-direction: column;    
+    }
+    .principalFooter { 
+        height: 22em;
+        background-color: rgba(0, 0, 0, 0.11);
+    }
+}
+
+@media(max-width: 1000px) { 
+    .ctnInputForm,
+.correo,
+.ctnInputForm { 
+    width: 40em;
+}
+}
+@media(max-width: 950px) { 
+    .ctnFooter2 { 
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    
+    }
+    .qr{ 
+        margin-top: 1em;
+    }
+    .eightVisual { 
+        height: 100em;
+    }
+    .principalFooter { 
+        height: 45em;
+    }
+    .eightVisual { 
+        margin-top: 10em;
+    }
+}
+@media(max-width: 670px) { 
+    .ctnInputForm,
+    .correo,
+    .ctnInputForm { 
+        width: 30em;
+    }
+    .map iframe { 
+        width: 30em;
+    }
+}
+@media(max-width: 500px) { 
+    .ctnInputForm,
+    .correo,
+    .ctnInputForm { 
+        width: 25em;
+    }
+    .map iframe { 
+        width: 25em;
+        height: 25em;
+    }
+}
+@media(max-width: 430px) { 
+    .ctnInputForm,
+    .correo,
+    .ctnInputForm { 
+        width: 20em;
+    }
+    .map iframe { 
+        width: 20em;
+        height: 20em;
+    }
+    .principalFooter { 
+        height: 50em;
+    }
+}
+@media(max-width: 330px) { 
+    .ctnInputForm,
+    .correo,
+    .ctnInputForm { 
+        width: 15em;
+    }
+    .map iframe { 
+        width: 15em;
+        height: 20em;
+    }
+}

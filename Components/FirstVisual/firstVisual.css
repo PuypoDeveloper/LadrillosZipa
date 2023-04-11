@@ -1,0 +1,259 @@
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+/*ESTILOS HEADER*/
+header { 
+    background-color: rgba(255, 255, 255, 0.76);
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+    height: 5em;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    top: 0;
+}
+
+.ctnIconsHeader a { 
+    color: black;
+    text-decoration: none;
+}
+.HeaderLogo { 
+    padding: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+.HeaderLogo img { 
+    width: 4em;
+    height: 4em;
+}
+.HeaderMenu { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+.HeaderMenu ul { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 1em;
+    }
+    
+.HeaderMenu ul li a { 
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    transition: 0.25s;
+    }
+.HeaderMenu ul li a:hover { 
+    color: #EB5E01;
+    scale: 0.9;
+}
+
+
+.HeaderSocial { 
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+.ctnIconFace i,
+.ctnIconInsta i { 
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.ctnIconFace i:hover {
+    color: #3B5998;
+    scale: 0.9;
+ }
+.ctnIconInsta i:hover {
+    color: #E1306C;
+    scale: 0.9;
+ }
+
+.ctnIconsHeader { 
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+.HeaderSocial { 
+    display: flex;
+    flex-direction: column;
+}
+.ctnHamburguer { 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+/*ESTILOS FIRST VISUAL*/
+.ctnFirstVisual { 
+    margin-top: 4em;
+    height: 50em;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.yearsBuildColombia { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin-bottom:2em;
+}
+.yearsBuildColombia {
+    animation: aparecer 1s ease-in-out;
+  }
+.secondLogo img { 
+    width: 12em;
+    height: 12em;
+    padding: 1em;
+
+}
+.textYears { 
+    color: white;
+    font-family: Geometos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.numberYears { 
+    font-size: 85px;
+}
+.stringYears { 
+    font-size: 40px;
+    margin-top: -20px;
+}
+.textBuild h2{ 
+    font-size: 70px;
+    font-family: Abeganshi;
+    letter-spacing: 1px;
+    color: white;
+    display: flex;
+}
+
+/*ESTILOS CONTENEDOR IMAGENES*/
+.ctnPrincipalImageFirstVisual { 
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.ctnPrincipalImageFirstVisual {
+    animation: aparecer 1s ease-in-out;
+  }
+.carouselExampleInterval { 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-inner { 
+    width: 100%;
+    height: 28em;
+    
+}
+.carousel-item { 
+    height: 100%;
+}
+.carousel-item img { 
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1270px) { 
+    .carousel-inner { 
+        height: 25em;
+        
+    }
+    .ctnFirstVisual { 
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    .ctnPrincipalImageFirstVisual { 
+        width: 100%;
+    }
+}
+@media(max-width: 1180px) { 
+    .ctnHamburguer { 
+        display: flex;
+    }
+    .HeaderMenu { 
+        display: none;
+    }
+}
+@media (max-width: 1100px) {
+    .ctnFirstVisual { 
+        margin-top: 1em;
+    } 
+    .numberYears { 
+        font-size: clamp(50px, 5vw, 85px);
+    }
+    .stringYears { 
+        font-size: clamp(20px, 5vw, 40px);
+    }
+    .textBuild h2{ 
+        font-size: clamp(40px, 5vw, 70px);
+    }
+}
+@media (max-width: 840px) { 
+    .ctnFirstVisual { 
+        margin-top: 4em;
+    } 
+    .carousel-inner { 
+        height: 22em;
+        
+    }
+    .yearsBuildColombia { 
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .carousel-inner { 
+        height: 25em;
+        
+    }
+}
+
+@media(max-width: 410px) { 
+    .ctnFirstVisual { 
+        height: 100vh;
+    }
+    .textBuild { 
+        text-align: center;
+    }
+    .carousel-inner { 
+        height: 18em;
+        
+    }
+}
+@media (max-width: 630px) { 
+    header { 
+        grid-template-columns: 0.5fr 4fr 0.9fr;
+    }
+}
+@media (max-width: 430px) { 
+    header { 
+        grid-template-columns: 0.5fr 4fr 1.3fr;
+    }
+}
+

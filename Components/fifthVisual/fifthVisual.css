@@ -1,0 +1,138 @@
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  body{ 
+    background-image: url("../../img/fondo.jpg"); ;
+}
+.fifthVisual { 
+    height: 50em;
+    margin-top: 8em ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 100vw;
+    color: white;
+
+}
+
+.fifthVisual h3 { 
+    font-family: Geometos;
+}
+
+.ctnImagesFifthVisual { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 100%;
+}
+.ctnImagesFifthVisual {
+    animation: aparecer 1s ease-in-out;
+  }
+.ctnFirstImageFifthVisual img,
+.ctnSecondImageFifthVisual img { 
+    width:  30em;
+    height: 20em;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.ctnFirstImageFifthVisual img:hover,
+.ctnSecondImageFifthVisual img:hover { 
+    scale: 0.95;
+}
+.ctnVideos { 
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.ctnVideos{
+    animation: aparecer 1s ease-in-out;
+  }
+.ctnFirstVideo { 
+    width: 20em;
+    height: 16em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*RESPONSIVE*/
+
+@media(max-width:1450px) { 
+    .ctnVideos { 
+        grid-template-columns: repeat(2, 1fr);
+        width: 20em;
+        gap: 4em;
+    }
+    .fifthVisual { 
+        height: 70em;
+    }
+}
+@media(max-width:1075px) { 
+    .ctnImagesFifthVisual { 
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .fifthVisual { 
+        height: 90em;
+    }
+    .fifthVisual { 
+        margin-top: 7em ;
+    }
+}
+@media(max-width:770px) { 
+    .ctnVideos { 
+        grid-template-columns: repeat(1, 1fr);
+        width: 20em;
+    }
+    .fifthVisual { 
+        height: 130em;
+    }
+}
+@media(max-width: 515px) { 
+    .ctnFirstImageFifthVisual img,
+    .ctnSecondImageFifthVisual img { 
+        width:  25em;
+        height: 15em;
+
+    }
+    .fifthVisual { 
+        height: 120em;
+    }
+}
+@media(max-width: 425px) { 
+    .ctnFirstImageFifthVisual img,
+    .ctnSecondImageFifthVisual img { 
+        width:  20em;
+        height: 15em;
+
+    }
+}
+@media(max-width: 340px) { 
+    .ctnFirstImageFifthVisual img,
+    .ctnSecondImageFifthVisual img { 
+        width:  15em;
+        height: 15em;
+
+    }
+    .ctnFirstVideo iframe { 
+        width: 18em;
+        height: 16em;
+    }
+    .ctnVideos { 
+        width: 18em;
+    }
+    .fifthVisual { 
+        height: 110em;
+    }
+}
